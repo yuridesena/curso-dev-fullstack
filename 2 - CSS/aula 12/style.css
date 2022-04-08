@@ -1,0 +1,67 @@
+body{
+    background: rgb(210, 202, 202);
+    font-family: 'Asap', sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 850px;
+    margin: 0px auto /*dois valores nesse short hand redundam em: primeiro valor se aplica para top e botton, e segundo valor se aplica para left e right*/
+}
+.profile {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+p {
+    color:rgb(33, 33, 33);
+    margin-top: 0px;
+}
+h1 {
+    font-family: 'Spartan', sans-serif;
+    letter-spacing: 0px;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+h2{
+    margin-top: 0px;
+}
+
+h4{
+    margin-bottom: 5px;
+}
+h5{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.foto {
+    width: 400px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50% 70% 50% 70%;
+    margin: 20px 30px 0px 30px;
+    padding: 1px;
+    box-shadow: 0px 0px 12px rgb(71, 67, 67); /*essa propriedade recebe quatro propriedades: distancia horizontal da sombra, distancia da sombra na vertical, desfoque da sombra, e cor da sombra*/
+}
+.redes-sociais {
+    width: 25px;
+}
+.github {
+    margin: 0 15px 0 15px
+}
+.link-redes{
+    text-decoration: none; /*retira no sublinhado de links*/
+}
+.trabalhos {
+    list-style: none;
+    padding-left: 20px;
+}
+.footer{
+    background-color: rgb(101, 88, 88);
+    margin-top: 10px;
+    color: beige;
+    text-align: center;
+    padding: 10px 0;
+}

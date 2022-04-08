@@ -1,0 +1,24 @@
+body{
+    background: rgb(234, 235, 231);
+    font-family: Arial, Helvetica,'Courier New', sans-serif; /*essa propriedade em body aponta ao navegador a fonte a ser utilizada como padrão, e dá opções subsequentes caso não exista a fonte instalada no computador do usuário. Assim, se o usuário não possuir arial, a próxima será helvética, se não a possuir, será 'courier new'. Detalhe para fontes que possuem nome composto: usa-se aspas simples para aplicá-la*/
+    color:rgb(34, 34, 34);
+}
+h1 {
+    margin-bottom: 0px;
+    letter-spacing: -1px;
+}
+h2{
+    margin-top:0px;
+    font-style: italic;
+    color: rgb(90, 90, 90);
+    font-weight: lighter;
+    letter-spacing: -1px; /*altera o espaçamento entre as letras*/
+}
+.foto {
+    width: 400px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50% 70% 50% 70%;
+    margin: 30px 30px 30px 30px;
+    padding: 1px;
+    box-shadow: 0px 0px 12px rgb(71, 67, 67); /*essa propriedade recebe quatro propriedades: distancia horizontal da sombra, distancia da sombra na vertical, desfoque da sombra, e cor da sombra*/
+}

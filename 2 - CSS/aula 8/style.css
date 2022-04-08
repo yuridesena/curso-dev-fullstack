@@ -1,0 +1,15 @@
+body{
+    background: rgb(210, 202, 202);
+}
+p {
+    color:rgb(33, 33, 33);
+}
+
+.foto {
+    width: 400px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50% 70% 50% 70%;
+    margin: 30px 30px 30px 30px;
+    padding: 1px;
+    box-shadow: 0px 0px 12px rgb(71, 67, 67); /*essa propriedade recebe quatro propriedades: distancia horizontal da sombra, distancia da sombra na vertical, desfoque da sombra, e cor da sombra*/
+}

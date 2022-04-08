@@ -1,0 +1,12 @@
+body{
+    background: rgb(210, 202, 202);
+}
+p {
+    color:rgb(33, 33, 33);
+}
+
+.foto {
+    width: 400px;
+    border: 3px solid rgb(255, 255, 255); /* esse tipo de propriedade é conhecida como short hand, pois apresenta três parâmetros, que poderiam ser descritos individualmente em propriedades individualizadas, tais como border-width, border-style, e border-color*/
+    border-radius: 50% 70% 50% 70%/*utiliza-se o valor em pixel "px" ou em porcentagem. O valor 50% para fotos quadradas gera uma borda circular, ou eliptica para fotos de proporções retangulares. Essa propriedade também é short hand, admitindo um, ou quatro valores de referência. Quando assume um valor apenar, é como se ele se aplicasse igualmente para os quatro parâmetros. Os quatro parametros em ordem são: canto superior esquerdo, canto superior direito, e cantos inferiores direito e esquedo*/
+}
