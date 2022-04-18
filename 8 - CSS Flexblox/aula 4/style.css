@@ -1,0 +1,41 @@
+
+
+.container {
+    background: silver;
+    padding: 5px;
+    margin: 5px;
+    height: 600px;
+
+    display: flex; /*display flex aplica a modalidade flex para tags filhas, no caso, deixaram de funcionar como block*/
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.caixa {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+.red{
+    order: 1; /*por definição, todas as ordens são 0, o navegador organiza a ordem crescentemente. Então, o order 1, nesse caso, vai pro final da lista. Order adminte qualquer valor inteiro*/
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+    flex-grow: 1;
+}
+
+.blue{
+    background-color: blue;
+    align-self: flex-end;
+}
+
+.green{
+    order: -1; /*nesse sentido, o menor valor de order vai pro começo da fila*/
+    background-color: green;
+    flex-grow: 2; /*essa prorpriedade aumenta o tamanho dentro da proporção indicada*/
+}

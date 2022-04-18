@@ -1,0 +1,33 @@
+
+
+.container {
+    background: silver;
+    padding: 5px;
+    margin: 5px;
+    display: flex; /*display flex aplica a modalidade flex para tags filhas, no caso, deixaram de funcionar como block*/
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.caixa {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}

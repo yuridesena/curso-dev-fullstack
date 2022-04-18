@@ -1,0 +1,56 @@
+
+
+.container {
+    background: silver;
+    width: 50vw;
+    padding: 5px;
+    margin: 5px;
+    display: flex; /*display flex aplica a modalidade flex para tags filhas, no caso, deixaram de funcionar como block*/
+
+}
+
+.container1{
+    flex-direction: column;
+}
+
+.container2{
+    flex-direction: column-reverse;
+}
+
+.container3{
+    flex-direction: row;
+}
+
+.container4{
+    flex-direction: row-reverse;
+}
+
+.container5{
+    flex-wrap: wrap;
+}
+
+.container6{
+    flex-wrap: wrap-reverse;
+}
+
+.caixa {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
