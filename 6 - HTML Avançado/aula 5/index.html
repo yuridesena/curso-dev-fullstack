@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="salvar.html" method="get">
+        <fieldset>
+            <legend>dados do usuário</legend>
+            <label for="nome">Nome</label>
+            <input name="nome" type="text" placeholder="Digite o seu nome" id="nome">
+            <br><br>
+            
+            <label for="email">E-mail</label>
+            <input name="email" type="email" placeholder="Digite o seu e-mail" id="email">
+            <br><br>
+            
+            <label for="senha">Senha</label>
+            <input name="senha" type="password" placeholder="Digite sua senha" id="senha">
+            <br><br>
+
+            <input type="file" name="" id="">
+            <br><br>
+
+            <label for="cor">Selecione a cor</label><br>
+            <input type="color" id="cor" name="cor"><br><br>
+            
+            <label>Sexo:</label><br>
+            <input name="sexo" type="radio" value="masculino"><label>Masculino</label><br>
+            <input name="sexo" type="radio" value="feminino"><label>Feminino</label><br>
+            <input name="sexo" type="radio" value="não definido"><label>Não informado</label><br><br>
+
+            <label>Habilidades</label><br>
+            <input type="checkbox" name="habilidades" value="HTML" id="HTML"><label for="HTML">HTML</label><br>
+            <input type="checkbox" name="habilidades" value="JavaScript" id="JavaScript"><label for="JavaScript">JavaScript</label><br>
+            <input type="checkbox" name="habilidades" value="CSS" id="CSS"><label for="CSS">CSS</label><br>
+            <input type="checkbox" name="habilidades" value="Angular" id="Angular"><label for="Angular">Angular</label><br>
+            <input type="checkbox" name="habilidades" value="Vue" id="Vue"><label for="Vue">Vue</label><br>
+            <input type="checkbox" name="habilidades" value="Haskell" id="Haskell"><label for="Haskell">Haskell</label><br>
+            <input type="checkbox" name="habilidades" value="Voar" id="Voar"><label for="Voar">Voar</label><br>
+            <input type="checkbox" name="habilidades" value="Invisibilidade" id="Invisibilidade"><label for="Invisibilidade">Invisibilidade</label><br><br>
+
+            <!--a id de um input serve para vincular esse input ao label, através da propriedade for na tag label. Assim, se se clicar na label, também se marca o input. Serve para qualquer input (radio, checkbox, text, email...)-->
+
+            <label>Cidade</label><br>
+            <select name="cidade">
+                <option seleted value="">--Selecione sua cidade--</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Belo Horizonte">Belo Horizonte</option>
+                <option value="Brasília">Brasília</option>
+                <option value="Curitiba">Curitiba</option>
+                <option value="Porto Alegre">Porto Alegre</option>
+            </select>
+
+            <br><br>
+
+            <label>Selecione seu carro</label><br>
+            <select name="carro">
+                <optgroup label="honda">
+                    <option value="civic">Civic</option><br>
+                </optgroup>
+
+                <optgroup label="chevrolet">
+                    <option value="celta">Celta</option><br>
+                </optgroup>
+
+                <optgroup label="fiat">
+                    <option value="uno">Uno</option><br>
+                </optgroup>
+
+            </select>
+
+            <br><br>
+
+            <label>Digite sua fruta preferida</label><br>
+            <input type="text" name="frutas" placeholder="Digite sua fruta" list="lista_de_frutas">
+
+            <datalist id="lista_de_frutas">
+                <option value="Abacate">Abacate</option>
+                <option value="Maçã">Maçã</option>
+                <option value="Laranja">Laranja</option>
+            </datalist>
+
+            <br><br>
+
+            <label>Digite uma mensagem</label><br>
+            <textarea name="mensagem" id="" cols="50" rows="10"></textarea>
+
+            <br><br>
+
+
+
+            <br><br>
+
+            <button>Enviar</button>
+            <!-- <input type="button" value="Enviar"> essa tag não é mais utilizada - antiga-->
+        </fieldset>
+    </form>
+
+</body>
+</html>
