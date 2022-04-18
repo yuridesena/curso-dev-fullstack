@@ -1,0 +1,11 @@
+
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    overflow:auto;
+    scroll-margin: 50px;
+}
+
+/* para o caso de uma div com altura e largura fixos, onde deve se situar um texto, pode acontecer de um texto longo ultrapassar os limites definidos para a tag. Para isso existe a propriedade overflow (transbordar), que é uma forma de tratar a extrapolação dos limites. No overflow do tipo auto, o broser interpreta o tamanho do texto, e insere barras de rolagem. Há opções como hidden, que esconde o que ultrapassa os limites, e não cria barra de rolagem. Há ainda overflow-x e -y, para tratar especificamente das barras de rolagem criadas nos eixos x e y através da propriedade overflow */

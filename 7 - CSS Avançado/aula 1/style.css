@@ -1,0 +1,27 @@
+
+
+:root{
+    --primary-color: rgb(65, 29, 91);
+    --secondary-color: rgb(46, 128, 195);
+
+    --spacing: 16px;
+    /*declarando uma variável global: "--" para declarar, e o local de declaração é :root*/
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin: var(--spacing);
+}
+
+p {
+    color: var(--primary-color);
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+}

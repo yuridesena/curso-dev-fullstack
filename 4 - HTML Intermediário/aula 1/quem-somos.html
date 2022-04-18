@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!--header, nav, article e footer tem a mesma função de uma div, porém os mecanismos de busca interpretam essas tags como as partes que representam na página, o que é indispensável para boa classificação nesses mecanismos -como o google, por exemplo-->
+    <header class="header"> 
+        Nome do Site
+    </header> 
+
+    <section class="container">
+        <!--uma section funciona como uma div, porém sua função é criar uma seção na página, em que se aplicará css para que as suas tags filhas não fiquem uma abaixo da outra, mas uma ao lado da outra, através do display-flex-->
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="quem-somos.html">Quem Somos</a>
+                </li>
+                <li>
+                    <a href="produtos.html">Produtos</a>
+                </li>
+                <li>
+                    <a href="servicos.html">Serviços</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+        <article class="content">
+            <h1>
+                Quem Somos
+            </h1>
+
+            <img src="img/quem-somos.jpg" alt="quem somos">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora corrupti est eos aperiam voluptatibus dignissimos doloribus. Quis blanditiis rerum tempore nobis quibusdam vero atque itaque numquam fuga, molestiae odit?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora corrupti est eos aperiam voluptatibus dignissimos doloribus. Quis blanditiis rerum tempore nobis quibusdam vero atque itaque numquam fuga, molestiae odit?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora corrupti est eos aperiam voluptatibus dignissimos doloribus. Quis blanditiis rerum tempore nobis quibusdam vero atque itaque numquam fuga, molestiae odit?
+            </p>
+        </article>
+
+    </section>
+
+    <footer class="footer">
+        Siga-nos nas redes sociais
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,154 @@
+
+
+:root {
+    --color-primary: #917758;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/********************************************************************************
+*                                   HOME                                        *
+*********************************************************************************/
+
+.home {
+    background-image: url(../images/bg-home.jpg);
+    height: 100vh; /*100 da altura (área visível do navegador)*/
+    background-size: cover;
+}
+
+.home .header {
+    padding: 30px 0;
+    height: 180px;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.home .header .nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+}
+
+.home .header .nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 20px;
+}
+
+
+.home .header .nav ul li a:hover {
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.home .header .nav ul li .logo{
+    margin: 0 30px;
+}
+
+
+
+/********************************************************************************
+*                                   HOME - BANNER                               *
+*********************************************************************************/
+
+.home .banner-wrap {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 180px);
+}
+
+.home .banner-wrap .banner {
+    white-space: nowrap;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.home .banner-wrap .banner span {
+    display: block;
+}
+
+.home .banner-wrap .banner .slogan1{
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.home .banner-wrap .banner h1{
+    font-size: 120px;
+}
+
+.home .banner-wrap .banner .slogan2{
+    margin-bottom: 15px;
+}
+
+/********************************************************************************
+*                                   ABOUT                                       *
+*********************************************************************************/
+
+.about{
+    background-color: var(--color-primary);
+    height: 100vh;
+    width: 100vw;
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .container .timing{
+    width: 33%;
+    padding: 20px;
+    background-image: url(../images/brush-big.jpg);
+}
+
+.about .container .timing .overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .container .experience{
+    width: 66%;
+}
+
+.about .container .timing .overlay .icon-cut{
+    width:50px;
+}
+
+.about .container .timing .overlay h3{
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+}

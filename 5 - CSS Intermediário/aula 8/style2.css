@@ -1,0 +1,19 @@
+
+
+.conteudo {
+    position: relative; /*isso vai fazer com que todos os elementos que são absolutos e que estejam dentro dele, sejam posicionados relativamente à ele, e não ao body ESSA TECNICA É MUITO UTILIZADA*/
+    height: 500px;
+    border: 1px solid black;
+    padding: 20px;;
+}
+
+.quadrado {
+    position: absolute; 
+    bottom: 50px; 
+    left: 50px;
+    width: 80px;
+    height: 80px;
+    background: black;
+    color: white;
+    text-align: center;
+}

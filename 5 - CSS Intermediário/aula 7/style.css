@@ -1,0 +1,37 @@
+/*a estrutura da pseudoclasse é com ':', e a estrutura do pseudoelemento é com '::'*/
+
+::selection{
+    color:crimson;
+    background-color: black ;
+} /*o selection altera o comportamento do texto selecionado. ess apropriedade se aplica a todo o documento, e não apenas a uma tag, por isso começa com os '::' não relacionado a tag*/
+
+p::first-line{
+    color: orange;
+}
+
+p::first-letter{
+    color:red;
+    font-size: 50px;
+}
+
+h1::before{
+    background: url(/Devil_Trident-256.webp);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    display: inline-block;
+    content:'';
+    margin-right: 20px;
+}
+
+h1::after{
+    background: url(/Devil_Trident-256.webp);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    display: inline-block;
+    content:'';
+    margin-left: 20px;
+}
+
+/*::after e ::before permite adicionar 'alguma coisa' antes ou depois de um elemento da página, através de css. Nesse sentido, dá para adicionar coisas como palavras, imagens, videos... no caso em questão, adiciona um ícone, porém tem de ser na forma de background. 1- informa-se a imagem background; 2- informa-se a dimensão do background; 3- informa-se que a imagem deve cobrir/repetir/estender/etc...; 4-informa-se que deve ser um inline-block, para ficar ao lado (se for inline, não aparece, se for block, fica em cima/em baixo; 5- obrigatoriamente se informa o content, que no caso é '', se fosse um texto, poderia estar escrito em content. NÃO SE APLICA DIRETAMENTE O ENDEREÇO DE IMAGEM EM CONTENT, POIS NÃO É POSSÍVEL MANIPULAR O CONTENT COM SUB PROPRIEDADES, POR ISSO SE UTILIZA BACKGROUND*/

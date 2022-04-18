@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Intermediário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magni qui explicabo voluptatibus corrupti iure nihil adipisci, quae, veniam expedita nesciunt minima, porro officiis a soluta eligendi itaque quibusdam delectus?
+    </div> <!-- a tag div é do tipo block, ou seja, ocupa toda a largura da tela, e é possível administrar suas dimensões -->
+    
+    <a href="http://www.nasa.gov">acessar site da nasa</a> <!--a tag <a> é do tipo inline, ou seja, se comporta em linha, não tem tamanho específico, e seu conteúdo determina seu tamanho.-->
+
+    <span>Teste</span> <!--span também é display inline, logo não admite tamanhos, e fica ao lado de outros elementos, e não abaixo (a depender do dimensionamento da janela)-->
+
+    <!--Nas tags inline não é possível alterar alturas e larguras, a não ser que se altere seu display de inline para block, o que pode ser efetuado através de css-->
+
+    <!--no entanto o block ocupa toda a largura da página, logo, mesmo que seu weight seja inferior à largura da página, o navegador criará automaticamente uma margem lateral que preencherá o restante da página.-->
+
+    <!--para corrigir o caso acima, e permitir que elementos da página possam ficar lado a lado (comportamento inline), e poder ter suas dimensões manipuladas (comportamento block), usa-se o tipo inline-block-->
+
+    <ul>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Quem Somos</a>
+        </li>
+        <li>
+            <a href="#">Serviços</a>
+        </li>
+        <li>
+            <a href="#">Contato</a>
+        </li>
+    </ul>
+</body>
+
+</html>

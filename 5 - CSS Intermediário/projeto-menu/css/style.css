@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(237, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /*coloca espaço entre elementos filhos*/
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    box-shadow: 0 0 10px black;
+    padding: 0 20px; /*espaçamento de 0px para top e bottom, e 20px nas laterais*/
+}
+
+.logo {
+    color: white;
+    text-transform: lowercase;
+    letter-spacing: -3px;
+}
+
+.logo span:first-child{
+    color:#1d52ff
+}
+.logo span:last-child{
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    position: relative; /*declara-se essa tag como relative, para que as tags filhas funcionem com a prorpiedade absolute em relação ao pai, e não ao body*/
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 17px; /*aumenta a área clicável dentro do li*/
+    display: block; /*a tag a é inline, convertendo-a par block, outros elementos que cobririam sua área, não conseguirão. Isso resolve o seguinte problema: apesar de a área de <a> ser grande, quando o hover não estiver ativo, a <li> preencherá sua área*/
+    
+}
+
+.menu li:hover{
+    background: #1d52ff;
+}
+
+.menu li:hover > .submenu{
+    display:block;
+}
+
+/*a regra acima é para que o submenu continue a exibir quando o cursor está sobre ele. Nesse caso, a pseudoclasse hover inside não sobre o elemento pai, mas sobre o elemento avô, uma vez que tanto o menu e submenu estão inseridos nele*/
+
+.submenu {
+    display: none;
+    position: absolute; /*empurra para baixo da tag pai*/
+    top: 33;
+    left: 0;
+    background-color: #1d52ff;
+    min-width: 110%;
+}
+
+.submenu > li:hover{
+    background: #05195a;
+}
+
+.submenu li{
+    position: relative;
+}
+
+.submenu li .submenu{
+    top: 0px;
+    left: 100%;
+}

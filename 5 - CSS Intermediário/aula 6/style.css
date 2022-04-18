@@ -1,0 +1,66 @@
+a {
+    color: red;
+}
+
+a:hover{
+    /*isto é uma pseudoclasse, que permite avaliar circunstâncias a que estão submetidos elementos da página. Nesse caso em particular, a pseudoclasse hover avalia se o mouse está sobre a classe, e aplica as propriedades*/
+    color: green;
+    font-weight: bold;
+}
+
+a:hover + .caixa {
+    display:block;
+    /*Lembrando a aula antiga: o sinal de + aplica a propriedade a tag irmã. Nesse caso, uma ação hover em <a> desencadeia uma ação na classe .caixa, que estava com display 'none', ou seja, não existia na exibição de pagina, e passa a existir*/
+}
+
+a:visited {
+    color: rgb(76, 179, 16);
+}
+
+a:active {
+    color:rgb(20, 20, 220)
+    /*quando clica sem soltar*/
+}
+
+.caixa {
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    display:none;
+}
+
+.caixa:hover {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+}
+
+ul li:first-child{
+    color: red;
+}
+
+ul li:last-child{
+    color: blue;
+}
+
+/*as pseudoclasses firstchild e last child aplicam as propriedades somente ao primeiro elemento, e ao último elemento, respectivamente. Serve não só para tags de lista, mas, por exemplo, para divs com vários <p> filhos*/
+
+.exemplo p:first-child{
+    color: red;
+    border: 2px solid red;
+}
+
+.exemplo p:last-child{
+    color:lime;
+    border: 3px solid lime;
+    border-radius: 5px;
+}
+
+.exemplo2{
+    border: 1px dotted black;
+}
+
+.exemplo2 p:nth-child(5){
+    color:orange;
+}
+/*a pseudoclasse nth-child() permite selecionar um elemento informando sua localização. No caso em questão, queremos alterar a quinta ocorrência de <p>*/

@@ -1,0 +1,23 @@
+
+
+p {
+    color: green;
+    font-size: 30px;
+    text-align: justify;
+    font-weight: lighter;
+    font-style: oblique;
+    /* font-variant: small-caps; essa propriedade aplica coisas como caixa alta */
+    text-transform: uppercase; /* essa propriedade aplica coisas como primeira maiúscula */
+    text-indent: 50px; /*recuo de começo de parágrafo*/
+    word-spacing: 20px; /*espaçãmento entre palaras*/
+    line-height: 85px; /*espaçamento entre linhas*/
+}
+
+a {
+    text-decoration:line-through;
+    letter-spacing: 8px;
+}
+
+h1 {
+    text-shadow: 2px 2px 15px green; /*parametros: horizontal, vertical, difusão da sombra, e cor*/
+}

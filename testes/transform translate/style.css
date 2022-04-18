@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    background-color: gray;
+    height: 100vh;
+}
+
+.home .header {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    height: 170px;
+}
+
+.home .banner-wrap {
+    position: relative;
+    height: calc(100vh - 170px);
+}
+
+.home .banner-wrap .banner {
+    background-color: blueviolet;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%); /*posiciona o ponto de loc do elemento na metade da altura e largura do elemento*/
+    top:30%;
+    left: 50%
+}

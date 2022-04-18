@@ -1,0 +1,29 @@
+.exemplo1 p.red{ /*combinators-combinadores: aplica somente a propriedade a classe que está relacionada à tag. A tag e a classe devem se separar por ponto, sem espaços*/
+    color: red;
+}
+
+.margin {
+    margin: 50px;
+}
+
+h1, h2, h3 { /*aplica mesma regra para todos os elementos descritos*/
+    color: blue;
+}
+
+.exemplo2 > p{ /*o símbolo de maior implica que somente os <p> filhos serão afetados pela prorpiedade, do contrário, todos os p seriam afetados*/
+    color: blue;
+}
+
+.exemplo {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.exemplo3 + p{ /*o símbolo de + implica que somente a PRIMEIRA tag <p> irmã da classe .exemplo3 será afetada pela nova propriedade*/
+    color: red;
+}
+
+.exemplo4 ~ p{ /*o símbolo de ~ implica que as tags <p> irmã da classe .exemplo3 será afetada pela nova propriedade*/
+    color: purple;
+}
